@@ -225,15 +225,6 @@ h2::after {
   }
 }
 
-/* Nagyon kis képernyők esetén (pl. kis telefonok) elrejthetjük, hogy ne takarjon semmit */
-@media (max-width: 420px) {
-  .szechenyi-badge {
-    width: 0;                     /* teljesen elrejtés */
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-  }
-}
 
 
 
