@@ -13,8 +13,7 @@
         <div class="nav-container">
             <a href="#home" class="logo">
                 <img src="img/logo_ot.png" alt="Logó">
-                <!--Ombódi Szilárd -->
-            </a>
+                </a>
             
             <ul class="nav-links">
                 <li><a href="#home">Kezdőlap</a></li>
@@ -36,10 +35,10 @@
     </header>
 
     <section id="home">
-        <img src="img/szechenyi2020.png" alt="Széchenyi 2020 logó" class="szechenyi-badge" />
-        <h1>Professzionális Villanyszerelés</h1>
+        <img src="img/szechenyi2020.png" alt="Széchenyi 2020 logó" class="szechenyi-badge" /> <!-- szechenyi logo -->
+        <h1>Prémium Villanyszerelés</h1>
         <p>Biztonságos, modern és energiahatékony elektromos megoldások lakossági és vállalati ügyfelek számára, garanciával.</p>
-        <a href="#contact" class="cta-btn">Kérjen Árajánlatot</a>
+        <a href="#" id="cta-trigger" class="cta-btn">Kérjen Árajánlatot</a>
     </section>
 
     <section id="about">
@@ -59,21 +58,21 @@
     <section id="portfolio">
         <h2>Eddigi Munkáim</h2>
         <div class="portfolio-grid">
-            <div class="portfolio-item">
+            <div class="portfolio-item gallery-trigger">
                 <div class="portfolio-img" style="background-image: url('img/halozat.png');"></div>
                 <div class="portfolio-info">
                     <h3>Teljes hálózatépítés</h3>
                     <p>Új építésű családi ház komplett elektromos hálózatának tervezése és kivitelezése.</p>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item gallery-trigger">
                 <div class="portfolio-img" style="background-image: url('img/smart.png');"></div>
                 <div class="portfolio-info">
                     <h3>Okosotthon integráció</h3>
                     <p>Világítás, fűtés és árnyékolástechnika okostelefonos vezérlésének kiépítése.</p>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item gallery-trigger">
                 <div class="portfolio-img" style="background-image: url('img/office.png');"></div>
                 <div class="portfolio-info">
                     <h3>Irodai LED világítás</h3>
@@ -88,31 +87,26 @@
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <i class="fas fa-quote-left"></i>
-                
                 <p class="testimonial-text">Nagyon precíz és tiszta munkát végzett. A régi alumínium vezetékeket cserélte nálunk, minden a megbeszéltek szerint zajlott.</p>
                 <p class="client-name">- Szabó Gábor</p>
             </div>
             <div class="testimonial-card">
                 <i class="fas fa-quote-left"></i>
-                
                 <p class="testimonial-text">Volt nálunk egy sürgős zárlat. Szilárd azonnal kijött és gyorsan elhárította a hibát. Csak ajánlani tudom!</p>
                 <p class="client-name">- Tóth Éva</p>
             </div>
             <div class="testimonial-card">
                 <i class="fas fa-quote-left"></i>
-                
                 <p class="testimonial-text">Az okosotthon rendszerünk kialakítását bíztuk rá. Nagyon modern megoldásokat javasolt, és tökéletesen működik minden.</p>
                 <p class="client-name">- Kiss Péter</p>
             </div>
             <div class="testimonial-card">
                 <i class="fas fa-quote-left"></i>
-                
                 <p class="testimonial-text">Megbízható szakember.</p>
                 <p class="client-name">- Nagy Anna</p>
             </div>
             <div class="testimonial-card">
                 <i class="fas fa-quote-left"></i>
-                
                 <p class="testimonial-text">Teljes lakásfelújítás során ő csinálta a villanyt. Segítőkész volt a szerelvények kiválasztásánál is.</p>
                 <p class="client-name">- Farkas Zoltán</p>
             </div>
@@ -143,6 +137,30 @@
             <p>&copy; Ombódi Szilárd Villanyszerelés. Minden jog fenntartva.</p>
         </div>
     </footer>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-content">
+            <span class="close-btn" id="close-contact"><i class="fas fa-times"></i></span>
+            <h2 style="margin-bottom: 1.5rem;">Kapcsolat</h2>
+            <div class="contact-details">
+                <p><i class="fas fa-phone" style="color: var(--primary-color);"></i> +36 30 123 4567</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary-color);"></i> info@</p>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> Rédics, Példa utca</p>
+            </div>
+            <p style="margin-top: 2rem; font-style: italic; font-size: 0.9rem;">Keressen bizalommal a fenti elérhetőségek bármelyikén!</p>
+        </div>
+    </div>
+
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content gallery-content">
+            <span class="close-btn gallery-close" id="close-gallery"><i class="fas fa-times"></i></span>
+            <button class="nav-btn" id="prev-img"><i class="fas fa-chevron-left"></i></button>
+            <div class="gallery-img-container">
+                <img id="gallery-image" src="" alt="Galéria kép">
+            </div>
+            <button class="nav-btn" id="next-img"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
